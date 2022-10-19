@@ -1,29 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicon - Contacts App -->
-    <link rel="icon" href="https://icon-library.com/images/letter-d-icon-png-28_69367.png">
-    <!-- bootstrap CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <!-- CSS styles -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- JS main -->
-    <script type="module" src="js/main.js"></script>
-    
-    <title>David Gómez</title>
-</head>
-<body>
-    <header>
 
-    </header>
-    <nav></nav>
-    <section></section>
-    <footer></footer>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon - Contacts App -->
+  <link rel="icon" href="https://icon-library.com/images/letter-d-icon-png-28_69367.png">
+  <!-- bootstrap CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- JS main -->
+  <script type="module" src="js/main.js"></script>
+
+  <title>David Gómez</title>
+</head>
+
+<body>
+  <header class="home" id="home">
+    <video id="home-video" autoplay loop muted poster="assets/home_video.mp4">
+      <source src="assets/home_video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="title-home neonTextGlow">
+      <h1>Hello! I'm <span class="neonTextFlicker2">David Gómez</span></h1><br>
+      <h5>Web Developer</h5>
+      <a class="scroll-home mb-4" href="#about">
+        <p class="m-0">scroll</p>
+        <em class="bi bi-arrow-down fs-4"></em>
+      </a>
+    </div>
+
+    
+  </header>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="me-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item d-flex justify-content-center">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="neonTextFlicker2 subtitle">About</h2>
+    </div>
+  </section>
+  <section class="work" id="work">
+    <div class="container">
+      <h2 class="neonTextFlicker2 subtitle">Work</h2>
+      <div class="card-container row row-cols-1 row-cols-md-3 g-4 justify-content-around">
+        <div class="card mb-3" style="width: 22rem;">
+          <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80" class="card-img-top" alt="...">
+          <div class="card-body hide">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text pb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card mb-3" style="width: 22rem;">
+          <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80" class="card-img-top" alt="...">
+          <div class="card-body hide">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text pb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card mb-3" style="width: 22rem;">
+          <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80" class="card-img-top" alt="...">
+          <div class="card-body hide">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text pb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card mb-3" style="width: 22rem;">
+          <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80" class="card-img-top" alt="...">
+          <div class="card-body hide">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text pb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card mb-3" style="width: 22rem;">
+          <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80" class="card-img-top" alt="...">
+          <div class="card-body hide">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text pb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card mb-3" style="width: 22rem;">
+          <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80" class="card-img-top" alt="...">
+          <div class="card-body hide">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text pb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="contact" id="contact">
+    <div class="container">
+      <h2 class="neonTextFlicker2 subtitle">Contact</h2>
+    </div>
+  </footer>
+
+  <!-- bootstrap JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
