@@ -66,13 +66,23 @@ body {
 }
 
 .home .scroll-home:hover {
-    color: yellow;
+    font-size: 25px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+nav .nav-link{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+nav .nav-link:hover {
     animation: glow 1s ease-in-out infinite alternate;
 }
 
 .subtitle {
-    padding: 120px 0 100px 0;
+    margin: 120px 0 100px 0;
     font-size: 4rem;
+    padding: 10px 20px;
 }
 
 section {
@@ -87,22 +97,32 @@ section {
     width: 100%;
 }
 
+.about {
+    background-image: linear-gradient(rgba(13,18,24), rgba(0, 0, 0, 0.1), rgba(13,18,24)), url("../../assets/wall_background.png");
+    background-size: cover;
+}
+
 .hide {
     display: none;
 }
 
 .work {
+    /* background-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0)), url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
+    background: rgb(13,18,24);
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
 .work .card {
+    background: #00b5cc;
     padding: 0;
     border-radius: 25px;
-    box-shadow: 0 0 0.75em #fff;
+    box-shadow: 0 0 0.75em #00b5cc;
 }
 .work .card img{
+    height: 100%;
+    width: 100%;
     border-radius: 25px;
 }
 
@@ -115,7 +135,10 @@ section {
     color: #000;
     border-radius: 25px;
     text-align: center;
-    padding: 40px 0;
+}
+
+.work .card .card-body a{
+    margin: 0 0 5px 0;    
 }
 
 .work .card img:hover + .hide{
@@ -129,6 +152,91 @@ section {
 .contact {
     height: 100vh;
     width: 100%;
+    background-image: linear-gradient(rgba(13,18,24), rgba(0, 0, 0, 0.1), rgba(13,18,24)), url("../../assets/wall_background.png");
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.contact .container {
+    height: 100%;
+}
+
+.contact h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.contact p {
+    color: #00b5cc;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.contact-links-container {
+    margin: auto 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+    font-size: 3rem;
+}
+
+.footer-links a {
+    width: 100%;
+    height: 100%;
+    padding: 5px 15px;
+    margin: 0 20px;
+    font-size: 2rem;
+    border: 0.2rem solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #0073e6,
+                0 0 0.8rem #0073e6,
+                0 0 2.8rem #0073e6,
+                inset 0 0 1.3rem #0073e6;
+}
+
+.footer-links a:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.footer-author {
+    margin: 75px;
+    font-size: 1.2rem;
+}
+
+.footer-author>a {
+    color: #00b5cc;
+}
+
+.footer-author>a:hover {
+    /* color: #00b5cc; */
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+
+
+/* 
+Animations and Effects
+*/
+
+.borderEffect {
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #f09,
+                0 0 0.8rem #f09,
+                0 0 2.8rem #f09,
+                inset 0 0 1.3rem #f09;
 }
 
 .neonTextGlow {
