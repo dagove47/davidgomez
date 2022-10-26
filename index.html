@@ -18,12 +18,13 @@
   <!-- CSS styles -->
   <link rel="stylesheet" href="styles/styles.css">
   <!-- JS main -->
-  <script type="module" src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 
   <title>David Gómez</title>
 </head>
 
 <body>
+  <div class="loader" id="loader"><div class="lds-dual-ring"></div><p class="neonTextFlicker2">Loading...</p></div>
   <header class="home" id="home">
     <video id="home-video" autoplay loop muted poster="assets/home_video.mp4">
       <source src="assets/home_video.mp4" type="video/mp4">
@@ -37,8 +38,6 @@
         <em class="bi bi-arrow-down fs-4"></em>
       </a>
     </div>
-
-
   </header>
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -96,19 +95,16 @@
       <h2 class="neonTextFlicker2 subtitle borderEffect">Work</h2>
       <div class="card-container row row-cols-1 row-cols-md-3 g-4 justify-content-around">
         <div class="card mb-5" style="width: 22rem;">
-          <img
-            src="assets/Project_1.png"
-            class="card-img-top" alt="Sorting Algorithms Visualizer project image">
+          <img src="assets/Project_1.png" class="card-img-top" alt="Sorting Algorithms Visualizer project image">
           <div class="card-body hide">
             <h5 class="card-title">Sorting Algorithms Visualizer</h5>
             <p class="card-text pb-3">JavaScript</p>
-            <a href="https://github.com/dagove47/Sorting_Algorithms_Visualizer" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/dagove47/Sorting_Algorithms_Visualizer" target="_blank"
+              class="btn btn-primary">View Project</a>
           </div>
         </div>
         <div class="card mb-5" style="width: 22rem;">
-          <img
-            src="assets/Project_2.png"
-            class="card-img-top" alt="Contacts App project image">
+          <img src="assets/Project_2.png" class="card-img-top" alt="Contacts App project image">
           <div class="card-body hide">
             <h5 class="card-title">Contacts App</h5>
             <p class="card-text pb-3">JavaScript</p>
@@ -116,43 +112,39 @@
           </div>
         </div>
         <div class="card mb-5" style="width: 22rem;">
-          <img
-            src="assets/Project_3.png"
-            class="card-img-top" alt="Rick and Morty API project image">
+          <img src="assets/Project_3.png" class="card-img-top" alt="Rick and Morty API project image">
           <div class="card-body hide">
             <h5 class="card-title">Rick and Morty API</h5>
             <p class="card-text pb-3">JavaScript</p>
-            <a href="https://github.com/dagove47/Rick_and_Morty_API" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/dagove47/Rick_and_Morty_API" target="_blank" class="btn btn-primary">View
+              Project</a>
           </div>
         </div>
         <div class="card mb-5" style="width: 22rem;">
-          <img
-            src="assets/Project_4.png"
-            class="card-img-top" alt="BeGamer project image">
+          <img src="assets/Project_4.png" class="card-img-top" alt="BeGamer project image">
           <div class="card-body hide">
             <h5 class="card-title">BeGamer</h5>
             <p class="card-text pb-3">React, JavaScript, Python, Flask, PostgreSQL</p>
-            <a href="https://github.com/dagove47/4Geeks-Final-Project" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/dagove47/4Geeks-Final-Project" target="_blank" class="btn btn-primary">View
+              Project</a>
           </div>
         </div>
         <div class="card mb-5" style="width: 22rem;">
-          <img
-            src="assets/Project_5.png"
-            class="card-img-top" alt="Tic Tac Toe project image">
+          <img src="assets/Project_5.png" class="card-img-top" alt="Tic Tac Toe project image">
           <div class="card-body hide">
             <h5 class="card-title">Tic Tac Toe</h5>
             <p class="card-text pb-3">React, JavaScript</p>
-            <a href="https://github.com/dagove47/tic-tac-toe-with-react" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/dagove47/tic-tac-toe-with-react" target="_blank" class="btn btn-primary">View
+              Project</a>
           </div>
         </div>
         <div class="card mb-5" style="width: 22rem;">
-          <img
-            src="assets/Project_6.png"
-            class="card-img-top" alt="To do list project image">
+          <img src="assets/Project_6.png" class="card-img-top" alt="To do list project image">
           <div class="card-body hide">
             <h5 class="card-title">To do list</h5>
             <p class="card-text pb-3">React, JavaScript</p>
-            <a href="https://github.com/dagove47/todo-list-application-using-react" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/dagove47/todo-list-application-using-react" target="_blank"
+              class="btn btn-primary">View Project</a>
           </div>
         </div>
       </div>
@@ -169,7 +161,8 @@
           <a href="https://github.com/dagove47" target="_blank"><em class="bi bi-github"></em></a>
           <a href="https://www.facebook.com/david.venegas.986/" target="_blank"><em class="bi bi-facebook"></em></a>
         </div>
-        <div class="footer-author">Designed & Built by <a href="https://www.linkedin.com/in/david-gomez-v/" target="_blank">David
+        <div class="footer-author">Designed & Built by <a href="https://www.linkedin.com/in/david-gomez-v/"
+            target="_blank">David
             Gómez</a></div>
       </div>
     </div>
