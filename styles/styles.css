@@ -45,7 +45,7 @@ Loader
     margin: 8px;
     border-radius: 50%;
     border: 0.2rem solid #fff;
-    border-color: #fff #000 #fff #000;
+    border-color: #fff #afafaf #fff #afafaf;
     animation: lds-dual-ring 1.2s linear infinite;
     box-shadow: 0 0 .2rem #fff,
         0 0 .2rem #fff,
@@ -124,6 +124,10 @@ Home
     animation: glow 1s ease-in-out infinite alternate;
 }
 
+/* 
+Navbar
+*/
+
 nav .nav-link {
     color: #fff;
     font-size: 1.2rem;
@@ -133,6 +137,10 @@ nav .nav-link {
 nav .nav-link:hover {
     animation: glow 1s ease-in-out infinite alternate;
 }
+
+/* 
+Sections
+*/
 
 .subtitle {
     margin: 120px 0 100px 0;
@@ -155,6 +163,9 @@ section {
 .about {
     background-image: linear-gradient(rgba(13, 18, 24), rgba(0, 0, 0, 0.1), rgba(13, 18, 24)), url("../assets/wall_background.png");
     background-size: cover;
+    /* background-image: linear-gradient(rgba(13, 18, 24), rgba(0, 0, 0, 0.7), rgba(13, 18, 24)), url("https://images.unsplash.com/photo-1586766193036-6d93c6c6c703?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-size: cover;
+    background-position: center; */
 }
 
 .aboutInfo {
@@ -168,25 +179,51 @@ section {
     font-size: 1.3rem;
 }
 
-.aboutInfo-Img {
-    width: 480px;
+.aboutInfo-left {
     display: flex;
+    width: 480px;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
 }
 
-.aboutInfo-text {
-    width: 600px;
-    margin: 1rem;
+.aboutInfo-Img {
+    width: 18rem;
+    background: #000;
+    border-radius: 20px;
+    box-shadow:
+        -50px -50px 0 -40px #0073e6,
+        50px 50px 0 -40px #0073e6;
 }
 
 .aboutInfo-Img img {
     width: 18rem;
     border-radius: 20px;
-    box-shadow:
-        -50px -50px 0 -40px #00b5cc,
-        50px 50px 0 -40px #00b5cc;
+    opacity: 0.5;
+}
+
+.aboutInfo-Img img:hover {
+    opacity: 1;
+    border-radius: 20px;
+    box-shadow: 
+        -50px -50px 0 -45px #0073e6,
+        50px 50px 0 -45px #0073e6,
+        0 0 2rem #0073e6,
+        0 0 0.8rem #0073e6,
+        0 0 2.8rem #0073e6,
+        inset 0 0 1.3rem #0073e6;
+}
+
+.aboutInfo-text {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.aboutInfo-text p{
+    text-align: center;
 }
 
 .skills {
@@ -203,7 +240,9 @@ section {
 }
 
 .work {
-    background: rgb(13, 18, 24);
+    background-image: linear-gradient(rgba(13, 18, 24), rgba(0, 0, 0, 0.7), rgba(13, 18, 24)), url("https://images.unsplash.com/photo-1586766193036-6d93c6c6c703?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -246,7 +285,7 @@ section {
 }
 
 .contact {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(13, 18, 24), rgba(0, 0, 0, 0.1), rgba(13, 18, 24)), url("../assets/wall_background.png");
     background-size: cover;
@@ -256,16 +295,40 @@ section {
     height: 100%;
 }
 
+.contact .container .subtitle {
+    margin: 120px 0px 80px;
+}
+
 .contact h3 {
     font-size: 3rem;
     font-weight: 500;
-    margin-top: 5%;
 }
 
 .contact p {
     color: #00b5cc;
     font-size: 1.5rem;
-    margin-top: 20px;
+}
+
+.formNewMessage {
+    max-width: 500px;
+    margin: 0 0 4rem 0;
+    /* border-radius: 20px; */
+    /* box-shadow: 0 0 0.9em #adff2f; */
+}
+
+.contact .formNewMessage .formStyle {
+    background: #141516;
+    color: #fff;
+    border-color: #00b5cc;
+    box-shadow: 0 0 0.75em #00b5cc;
+}
+
+.contact .formNewMessage .form-control::placeholder {
+    color: #bebebe;
+}
+
+.contact .formNewMessage .btn:hover {
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .contact-links-container {
@@ -302,7 +365,7 @@ section {
 }
 
 .footer-author {
-    margin: 75px;
+    margin: 30px;
     font-size: 1.2rem;
 }
 
@@ -322,7 +385,6 @@ section {
 
     .contact p {
         font-size: 1rem;
-        margin-bottom: 50px;
     }
 
     .footer-links a {

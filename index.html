@@ -24,7 +24,10 @@
 </head>
 
 <body>
-  <div class="loader" id="loader"><div class="lds-dual-ring"></div><p class="neonTextFlicker2">Loading...</p></div>
+  <div class="loader" id="loader">
+    <div class="lds-dual-ring"></div>
+    <p class="neonTextFlicker2">Loading...</p>
+  </div>
   <header class="home" id="home">
     <video id="home-video" autoplay loop muted poster="assets/home_video.mp4">
       <source src="assets/home_video.mp4" type="video/mp4">
@@ -68,8 +71,10 @@
     <div class="container">
       <h2 class="neonTextFlicker2 subtitle borderEffect">About</h2>
       <div class="aboutInfo">
-        <div class="aboutInfo-Img">
-          <img src="assets/Profile_David_Gomez.jpg" alt="Profile picture David Gomez">
+        <div class="aboutInfo-left">
+          <div class="aboutInfo-Img">
+            <img src="assets/Profile_David_Gomez.jpg" alt="Profile picture David Gomez">
+          </div>
         </div>
         <div class="aboutInfo-text">
           <p>I'm a Front-End Developer for Accenture in Costa Rica.<br>
@@ -155,6 +160,35 @@
       <h2 class="neonTextFlicker2 subtitle borderEffect">Contact</h2>
       <h3>Let's work together...</h3>
       <p>How do you take your coffee?</p>
+      <form class="formNewMessage row g-3 needs-validation" id="formNewMessage" novalidate>
+        <div class="col-md-6">
+          <label for="newName" class="form-label visually-hidden">Name</label>
+          <input type="text" class="form-control formStyle" id="newName" placeholder="Name" required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please provide a valid name.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="newEmail" class="form-label visually-hidden">Email</label>
+          <input type="email" class="form-control formStyle" id="newEmail" placeholder="Email" required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please provide a valid email.</div>
+        </div>
+        <div class="col-12">
+          <label for="newSubject" class="form-label visually-hidden">Subject</label>
+          <input type="text" class="form-control formStyle" id="newSubject" placeholder="Subject" required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please provide a Subject.</div>
+        </div>
+        <div class="col-12">
+          <label for="newMessage" class="form-label visually-hidden">Message</label>
+          <textarea class="form-control formStyle" id="newMessage" placeholder="Message" rows="3" required></textarea >
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please provide a Message.</div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+          <button class="btn btn-primary fs-5 mt-3 formStyle" type="submit">Send Message!</button>
+        </div>
+      </form>
       <div class="contact-links-container">
         <div class="footer-links">
           <a href="https://www.linkedin.com/in/david-gomez-v/" target="_blank"><em class="bi bi-linkedin"></em></a>
