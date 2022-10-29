@@ -17,6 +17,9 @@
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
   <!-- CSS styles -->
   <link rel="stylesheet" href="styles/styles.css">
+  <!-- emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">emailjs.init('sp-w7XqCrCVhxyy_T')</script>
   <!-- JS main -->
   <script src="js/main.js" defer></script>
 
@@ -163,30 +166,32 @@
       <form class="formNewMessage row g-3 needs-validation" id="formNewMessage" novalidate>
         <div class="col-md-6">
           <label for="newName" class="form-label visually-hidden">Name</label>
-          <input type="text" class="form-control formStyle" id="newName" placeholder="Name" required>
+          <input type="text" class="form-control formStyle" name="newName" id="newName" placeholder="Name" required>
           <div class="valid-feedback">Looks good!</div>
           <div class="invalid-feedback">Please provide a valid name.</div>
         </div>
         <div class="col-md-6">
           <label for="newEmail" class="form-label visually-hidden">Email</label>
-          <input type="email" class="form-control formStyle" id="newEmail" placeholder="Email" required>
+          <input type="email" class="form-control formStyle" name="newEmail" id="newEmail" placeholder="Email" required>
           <div class="valid-feedback">Looks good!</div>
           <div class="invalid-feedback">Please provide a valid email.</div>
         </div>
         <div class="col-12">
           <label for="newSubject" class="form-label visually-hidden">Subject</label>
-          <input type="text" class="form-control formStyle" id="newSubject" placeholder="Subject" required>
+          <input type="text" class="form-control formStyle" name="newSubject" id="newSubject" placeholder="Subject"
+            required>
           <div class="valid-feedback">Looks good!</div>
           <div class="invalid-feedback">Please provide a Subject.</div>
         </div>
         <div class="col-12">
           <label for="newMessage" class="form-label visually-hidden">Message</label>
-          <textarea class="form-control formStyle" id="newMessage" placeholder="Message" rows="3" required></textarea >
+          <textarea class="form-control formStyle" name="newMessage" id="newMessage" placeholder="Message" rows="3"
+            required></textarea>
           <div class="valid-feedback">Looks good!</div>
           <div class="invalid-feedback">Please provide a Message.</div>
         </div>
         <div class="col-12 d-flex justify-content-end">
-          <button class="btn btn-primary fs-5 mt-3 formStyle" type="submit">Send Message!</button>
+          <input class="btn fs-5 mt-3 formStyle" id="submitBtn" type="submit" value="Send Message!">
         </div>
       </form>
       <div class="contact-links-container">
