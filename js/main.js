@@ -1,4 +1,3 @@
-// import * as resume from './data.js';
 import {
     resume
 } from "./data.js";
@@ -8,20 +7,30 @@ const formNewMessage = document.getElementById('formNewMessage');
 const formInputs = document.querySelectorAll('#newName, #newEmail, #newSubject, #newMessage')
 const submitBtn = document.getElementById('submitBtn');
 
-const as = document.getElementById('');
-
-
 window.addEventListener("load", () => {
     loader.style.display = "none";
 })
 
 /* 
+    Home
+*/
+
+const name = document.querySelector('[data-name]');
+const profession = document.querySelector('[data-profession]');
+name.textContent = resume.basics.name;
+profession.textContent = resume.basics.label;
+
+/* 
     About
 */
+
 const aboutInfo = document.querySelector('[data-aboutInfo]');
 
+const sanitizer1 = new Sanitizer();
 const aboutInfoText = document.createElement('p');
-aboutInfoText.innerHTML = resume.basics.summary;
+aboutInfoText.setHTML(resume.basics.summary, {
+    sanitizer: sanitizer1
+});
 aboutInfo.append(aboutInfoText);
 
 const skills = document.createElement('ul');
@@ -81,24 +90,7 @@ cards.map(card => {
 })
 
 /* 
-    Footer
-*/
-
-const socialMediaFooter = document.querySelector('[data-footer-socialMedia]');
-const socialMediaTemplate = document.querySelector('[data-socialMedia-template]');
-const socialMedias = resume.basics.profiles;
-socialMedias.map(socialMedia => {
-    const conctact =  socialMediaTemplate.content.cloneNode(true).children[0];
-    const socialMediaIcon = conctact.querySelector('[data-socialMedia-icon]');
-
-    conctact.href = socialMedia.url;
-    socialMediaIcon.className = socialMedia.iconClassCall;
-
-    socialMediaFooter.append(conctact);
-})
-
-/* 
-    Contact Form
+    Contact
 */
 
 formNewMessage.addEventListener('submit', function (event) {
@@ -132,3 +124,27 @@ function clearInputs(inputs) {
         input.value = '';
     });
 }
+
+/* 
+    Footer
+*/
+
+const socialMediaFooter = document.querySelector('[data-footer-socialMedia]');
+const socialMediaTemplate = document.querySelector('[data-socialMedia-template]');
+const socialMedias = resume.basics.profiles;
+socialMedias.map(socialMedia => {
+    const conctact = socialMediaTemplate.content.cloneNode(true).children[0];
+    const socialMediaIcon = conctact.querySelector('[data-socialMedia-icon]');
+
+    conctact.href = socialMedia.url;
+    socialMediaIcon.className = socialMedia.iconClassCall;
+
+    socialMediaFooter.append(conctact);
+})
+
+const author = document.querySelector('[data-author]');
+const authorLink = document.createElement('a');
+authorLink.href = resume.basics.url;
+authorLink.target = '_blank';
+authorLink.textContent = resume.basics.name;
+author.append(authorLink);

@@ -9,7 +9,7 @@ export const resume = {
         "imageDescription": "Profile picture David Gomez",
         "email": "dagove47@gmail.com",
         "phone": "",
-        "url": "",
+        "url": "https://www.linkedin.com/in/david-gomez-v/",
         "summary": "I'm a Front-End Developer for Accenture in Costa Rica.<br>" + 
                     "I have serious interest for UI effects, animations and creating intuitive, dynamic user experiences.<br>" +
                     "Let's make something special.",
