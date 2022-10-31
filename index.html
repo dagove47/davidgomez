@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal Portfolio David Gomez">
-  <meta name="keywords" content="David Gomez, Portfolio, Developer, Front End, Web Developer, web design, responsive web designer, professional web developer, JavaScript">
+  <meta name="keywords"
+    content="David Gomez, Portfolio, Developer, Front End, Web Developer, web design, responsive web designer, professional web developer, JavaScript">
   <meta name="author" content="David Gomez">
   <!-- favicon -->
-  <link rel="icon" href="assets/astronaut-icon.png" type="image/x-icon" title="Astronaut icon created by YI-PIN from www.flaticon.com">
+  <link rel="icon" href="assets/astronaut-icon.png" type="image/x-icon"
+    title="Astronaut icon created by YI-PIN from www.flaticon.com">
   <!-- bootstrap CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -22,7 +24,9 @@
   <link rel="stylesheet" href="styles/styles.css">
   <!-- emailjs -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">emailjs.init('sp-w7XqCrCVhxyy_T')</script>
+  <script type="text/javascript">
+    emailjs.init('sp-w7XqCrCVhxyy_T')
+  </script>
   <!-- JS main -->
   <script src="js/main.js" defer></script>
 
@@ -32,7 +36,7 @@
 <body>
   <div class="loader" id="loader">
     <div class="lds-dual-ring"></div>
-    <p class="neonTextFlicker2">Loading...</p>
+    <p class="neonTextFlicker">Loading...</p>
   </div>
   <header class="home" id="home">
     <video id="home-video" autoplay loop muted poster="assets/home_video.mp4">
@@ -40,7 +44,7 @@
       Your browser does not support HTML5 video.
     </video>
     <div class="title-home neonTextGlow">
-      <h1>Hello! I'm <span class="neonTextFlicker2">David Gómez</span></h1><br>
+      <h1>Hello! I'm <span class="neonTextFlicker">David Gómez</span></h1><br>
       <h5>Web Developer</h5>
       <a class="scroll-home mb-4" href="#about">
         <p class="m-0">scroll</p>
@@ -75,13 +79,8 @@
   </nav>
   <section class="about" id="about">
     <div class="container">
-      <h2 class="neonTextFlicker2 subtitle borderEffect">About</h2>
+      <h2 class="neonTextFlicker subtitle borderEffect">About</h2>
       <div class="aboutInfo">
-        <div class="aboutInfo-left">
-          <div class="aboutInfo-Img">
-            <img src="assets/Profile_David_Gomez.jpg" alt="Profile picture David Gomez">
-          </div>
-        </div>
         <div class="aboutInfo-text">
           <p>I'm a Front-End Developer for Accenture in Costa Rica.<br>
             I have serious interest for UI effects, animations and creating intuitive, dynamic user experiences.<br>
@@ -89,81 +88,105 @@
           </p>
           <ul class="skills">
             <li>JavaScript</li>
-            <li>Java</li>
             <li>React</li>
             <li>HTML5</li>
             <li>CSS3</li>
             <li>SASS</li>
+            <li>AEM</li>
+            <li>Java</li>
             <li>Linux</li>
-            <li>Linux Server</li>
           </ul>
         </div>
+        <div class="aboutInfo-right">
+          <div class="aboutInfo-Img">
+            <img src="assets/Profile_David_Gomez.jpg" alt="Profile picture David Gomez">
+          </div>
+        </div>
+        <h3 class="aboutInfo-jobs-title">Where I’ve Worked</h3>
+        <ul class="aboutInfo-jobs">
+          <li class="job">
+            <img class="borderEffect2" src="assets/Logo_DollarPerHead.png" alt="DollarPerHead logo">
+            <a href="https://www.dollarperhead.com/" target="_blank" class="jobName">DollarPerHead.com</a>
+          </li>
+          <li class="job">
+            <img class="borderEffect2" src="assets/Logo_Schule_Wielandstraße.jpg" alt="Schule Wielandstraße logo">
+            <a href="https://schule-wielandstrasse.hamburg.de/" target="_blank" class="jobName">Schule Wielandstraße</a>
+          </li>
+          <li class="job">
+            <img class="borderEffect2" src="assets/Logo_Concentrix.png" alt="Concentrix logo">
+            <a href="https://www.concentrix.com/" target="_blank" class="jobName">Concentrix</a>
+          </li>
+          <li class="job">
+            <img class="borderEffect2" src="assets/Logo_Accenture.jpg" alt="Accenture logo">
+            <a href="https://www.accenture.com/" target="_blank" class="jobName">Accenture</a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
   <section class="work" id="work">
     <div class="container">
-      <h2 class="neonTextFlicker2 subtitle borderEffect">Work</h2>
-      <div class="card-container row row-cols-1 row-cols-md-3 g-4 justify-content-around">
-        <div class="card mb-5" style="width: 22rem;">
+      <h2 class="neonTextFlicker subtitle borderEffect">Work</h2>
+      <div class="card-container row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <div class="card">
           <img src="assets/Project_1.png" class="card-img-top" alt="Sorting Algorithms Visualizer project image">
           <div class="card-body hide">
             <h5 class="card-title">Sorting Algorithms Visualizer</h5>
             <p class="card-text pb-3">JavaScript</p>
             <a href="https://github.com/dagove47/Sorting_Algorithms_Visualizer" target="_blank"
-              class="btn btn-primary">View Project</a>
+              class="btn">View Project</a>
           </div>
         </div>
-        <div class="card mb-5" style="width: 22rem;">
+        <div class="card">
           <img src="assets/Project_2.png" class="card-img-top" alt="Contacts App project image">
           <div class="card-body hide">
             <h5 class="card-title">Contacts App</h5>
             <p class="card-text pb-3">JavaScript</p>
-            <a href="https://github.com/dagove47/Contacts_App" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/dagove47/Contacts_App" target="_blank" class="btn">View Project</a>
           </div>
         </div>
-        <div class="card mb-5" style="width: 22rem;">
+        <div class="card">
           <img src="assets/Project_3.png" class="card-img-top" alt="Rick and Morty API project image">
           <div class="card-body hide">
             <h5 class="card-title">Rick and Morty API</h5>
             <p class="card-text pb-3">JavaScript</p>
-            <a href="https://github.com/dagove47/Rick_and_Morty_API" target="_blank" class="btn btn-primary">View
+            <a href="https://github.com/dagove47/Rick_and_Morty_API" target="_blank" class="btn">View
               Project</a>
           </div>
         </div>
-        <div class="card mb-5" style="width: 22rem;">
+        <div class="card">
           <img src="assets/Project_4.png" class="card-img-top" alt="BeGamer project image">
           <div class="card-body hide">
             <h5 class="card-title">BeGamer</h5>
             <p class="card-text pb-3">React, JavaScript, Python, Flask, PostgreSQL</p>
-            <a href="https://github.com/dagove47/4Geeks-Final-Project" target="_blank" class="btn btn-primary">View
+            <a href="https://github.com/dagove47/4Geeks-Final-Project" target="_blank" class="btn">View
               Project</a>
           </div>
         </div>
-        <div class="card mb-5" style="width: 22rem;">
+        <div class="card">
           <img src="assets/Project_5.png" class="card-img-top" alt="Tic Tac Toe project image">
           <div class="card-body hide">
             <h5 class="card-title">Tic Tac Toe</h5>
             <p class="card-text pb-3">React, JavaScript</p>
-            <a href="https://github.com/dagove47/tic-tac-toe-with-react" target="_blank" class="btn btn-primary">View
+            <a href="https://github.com/dagove47/tic-tac-toe-with-react" target="_blank" class="btn">View
               Project</a>
           </div>
         </div>
-        <div class="card mb-5" style="width: 22rem;">
+        <div class="card">
           <img src="assets/Project_6.png" class="card-img-top" alt="To do list project image">
           <div class="card-body hide">
             <h5 class="card-title">To do list</h5>
             <p class="card-text pb-3">React, JavaScript</p>
             <a href="https://github.com/dagove47/todo-list-application-using-react" target="_blank"
-              class="btn btn-primary">View Project</a>
+              class="btn">View Project</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <footer class="contact" id="contact">
+  <section class="contact" id="contact">
     <div class="container">
-      <h2 class="neonTextFlicker2 subtitle borderEffect">Contact</h2>
+      <h2 class="neonTextFlicker subtitle borderEffect">Contact</h2>
       <h3>Let's work together...</h3>
       <p>How do you take your coffee?</p>
       <form class="formNewMessage row g-3 needs-validation" id="formNewMessage" novalidate>
@@ -197,16 +220,17 @@
           <input class="btn fs-5 mt-3 formStyle" id="submitBtn" type="submit" value="Send Message!">
         </div>
       </form>
-      <div class="contact-links-container">
-        <div class="footer-links">
-          <a href="https://www.linkedin.com/in/david-gomez-v/" target="_blank"><em class="bi bi-linkedin"></em></a>
-          <a href="https://github.com/dagove47" target="_blank"><em class="bi bi-github"></em></a>
-          <a href="https://www.facebook.com/david.venegas.986/" target="_blank"><em class="bi bi-facebook"></em></a>
-        </div>
-        <div class="footer-author">Designed & Built by <a href="https://www.linkedin.com/in/david-gomez-v/"
-            target="_blank">David
-            Gómez</a></div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-links-container">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/david-gomez-v/" target="_blank"><em class="bi bi-linkedin"></em></a>
+        <a href="https://github.com/dagove47" target="_blank"><em class="bi bi-github"></em></a>
+        <a href="https://www.facebook.com/david.venegas.986/" target="_blank"><em class="bi bi-facebook"></em></a>
       </div>
+      <div class="footer-author"><p>Designed & Built by <a href="https://www.linkedin.com/in/david-gomez-v/"
+          target="_blank">David Gómez</a></p></div>
     </div>
   </footer>
 

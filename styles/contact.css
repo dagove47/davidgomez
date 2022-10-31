@@ -1,0 +1,40 @@
+.contact {
+    width: 100%;
+    background-image: linear-gradient(rgba(13, 18, 24, 0), rgba(0, 0, 0, 0), rgba(13, 18, 24, 0.7));
+}
+
+.contact .container {
+    height: 100%;
+}
+
+.contact .container h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.contact .container p {
+    color: #00b5cc;
+    margin: 0 0 3rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact .container .formNewMessage {
+    max-width: 500px;
+    margin: 0 0 5rem 0;
+}
+
+.contact .container .formNewMessage .formStyle {
+    background: #141516;
+    color: #fff;
+    border-color: #00b5cc;
+    box-shadow: 0 0 0.75em #00b5cc;
+}
+
+.contact .container .formNewMessage .form-control::placeholder {
+    color: #bebebe;
+}
+
+.contact .container .formNewMessage .btn:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
