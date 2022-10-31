@@ -45,8 +45,8 @@ aboutInfo.append(skills);
 
 const aboutInfoImg = document.querySelector('[data-aboutInfo-img]');
 const profileImg = document.createElement('img');
-profileImg.setAttribute("src", `${resume.basics.image}`);
-profileImg.setAttribute("alt", `${resume.basics.imageDescription}`);
+profileImg.src = resume.basics.image;
+profileImg.alt = resume.basics.imageDescription;
 aboutInfoImg.append(profileImg);
 
 
